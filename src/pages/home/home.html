@@ -8,11 +8,15 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <div id="recaptcha-container"></div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-item>
+    <ion-label stacked>Phone Number</ion-label>
+    <ion-input type="number" [(ngModel)]="phoneNumber"></ion-input>
+  </ion-item>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <button ion-button id="sign-in-button" (click)="loginWithPhoneno(phoneNumber)">
+    Sign In
+  </button>
+
 </ion-content>

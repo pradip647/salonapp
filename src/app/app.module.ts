@@ -9,6 +9,18 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+//firebase
+import * as firebase from'firebase';
+var config = {
+  apiKey: "AIzaSyAn9HZ9eS9M1gHgHNg4LsgJtbto5oSAPfo",
+  authDomain: "salon-ef6a7.firebaseapp.com",
+  databaseURL: "https://salon-ef6a7.firebaseio.com",
+  projectId: "salon-ef6a7",
+  storageBucket: "salon-ef6a7.appspot.com",
+  messagingSenderId: "1022574101777"
+};
+firebase.initializeApp(config);
+
 @NgModule({
   declarations: [
     MyApp,
